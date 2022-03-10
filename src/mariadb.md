@@ -1,3 +1,5 @@
+---: Install MariaDB
+---
 # Install MariaDB on Raspberry Pi
 
 Maria DB is used by so many other software so better just to get it installed now

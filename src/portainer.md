@@ -1,3 +1,6 @@
+---
+title: Install Portainer
+---
 # Install Portainer - Raspberry Pi
 
 With Docker set up and configured, we can use it to install Portainer to our Raspberry Pi.

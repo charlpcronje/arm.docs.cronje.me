@@ -1,14 +1,17 @@
+---
+title: Install Docker
+---
 # Install Docker on Raspberry Pi
 
 Now is time to install Docker! Fortunately, Docker provides a handy install script for that, just run:
 
-## Step 1
+### Step 1 - Download Docker     
 
 ```sh
 curl -sSL https://get.docker.com | sh
 ```
 
-## Step 2 - Add a Non-Root User to the Docker Group
+### Step 2 - Non-Root User to the Docker Group
 
 By default, only users who have administrative privileges (root users) can run containers. If you are not logged in as the root, one option is to use the sudo prefix.
 However, you could also add your non-root user to the Docker group which will allow it to execute docker commands.
@@ -29,7 +32,7 @@ groups ${USER}
 
 Reboot the Raspberry Pi to let the changes take effect.
 
-## Step 3 - Install Docker-Compose
+### Step 3 - Install Docker-Compose
 Docker-Compose usually gets installed using pip3. For that, we need to have python3 and pip3 installed. If you don't have it installed, you can run the following commands:
 
 ```sh
@@ -44,9 +47,7 @@ Once python3 and pip3 are installed, we can install Docker-Compose using the fol
 sudo pip3 install docker-compose
 ```
 
-## Step 4
-
-Enable the Docker system service to start your containers on boot
+### Step 4 - Enable the Docker service
 
 This is a very nice and important addition. With the following command you can configure your Raspberry Pi to automatically run the Docker system service, whenever it boots up.
 
@@ -56,7 +57,7 @@ sudo systemctl enable docker
 
 With this in place, containers with a restart policy set to always or unless-stopped will be re-started automatically after a reboot.
 
-## Step5 - Run Hello World Container
+### Step5 - Run Hello World Container
 
 The best way to test whether Docker has been set up correctly is to run the Hello World container.
 
@@ -68,7 +69,7 @@ docker run hello-world
 
 Once it goes through all the steps, the output should inform you that your installation appears to be working correctly.
 
-## Step 6 - A sample Docker Compose file
+### Step 6 - A sample Docker Compose file
 
 This section shows a quick sample of a Docker-Compose file, which starts three containers that once started will automatically come up, if the Raspberry Pi get fully power cycled. To learn more about the sample project, visit Docker Speed Test project on GitHub.
 
@@ -129,13 +130,13 @@ To start the containers using Docker-Compose, run the following command:
 docker-compose -f docker-compose.yaml up -d
 ```
 
-Find Raspberry Pi Docker Images
+### Find Raspberry Pi Docker Images
 
 Raspberry Pi is based on ARM architecture. Hence, not all Docker images will work on your Raspberry Pi.
 
 Remember that when searching for images to pull from Docker Hub. Apply the Architectures filter to search for supported apps.
 
-## How to Upgrade Docker on Raspberry Pi?
+### How to Upgrade Docker on Raspberry Pi?
 
 Upgrade Docker using the package manager with the command:
 

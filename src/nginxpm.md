@@ -1,18 +1,20 @@
-# Install EnginX Proxy Manager on Raspberry Pi
+---: Install NginX Proxy Manager
+---
+# Install NginX Proxy Manager on Raspberry Pi
 
-Once connected we need to create a folder so type the following and press “enter“:
+Once connected we need to create a folder so type the following and press `enter`:
 
 ```sh
 mkdir nginx
 ```
 
-Now we need to move into that directory using the following and press “enter“:
+Now we need to move into that directory using the following and press `enter`:
 
 ```sh
 cd nginx
 ```
 
-We now need to create the file config.json use the following to open the nano editor so we can input some data then press “enter”.
+We now need to create the file config.json use the following to open the nano editor so we can input some data then press `enter`.
 
 ```sh
 nano config.json
@@ -36,7 +38,7 @@ Note: The below details have been updated and are confirmed working as of 24th O
   }
 }
 ```
-Once you have done that press “Ctrl + X” then Y to save and “Enter” to exit the nano editor.
+Once you have done that press `Ctrl + X` then Y to save and `Enter` to exit the nano editor.
 
 We now have to create one more file this one is a docker-compose.yml file.
 
