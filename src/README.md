@@ -9,6 +9,8 @@
 
 Most if the same software runs on the Raspberry Pi as any other Linux box but the installation instructions do differ quite a bit. Here are some instructions to get you started with the basics on your Pi.
 
+- [Kali Linux on Your PI 4](kaliInstall.md)
+- [Reset root password](resetRootPass.md)
 - [Install Node.js](nodejs.md)
 - [Install MariaDB](mariadb.md)
 - [Install Docker](docker.md)
