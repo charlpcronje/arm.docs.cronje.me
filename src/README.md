@@ -1,4 +1,5 @@
----: Raspberry Pi - ARM Docs
+---
+title: Raspberry Pi - ARM Docs
 ---
 ```sh
     _   ___ __  __   ___   ___   ___ ___   __  __ ___  
