@@ -2,7 +2,7 @@ input: src
 output: public
 url: https://arm.docs.cronje.me
 branding:
-  title: CRONJE.me ARM
+  title: CRONJE.me | ARM
   label: ARM
 links:
 - text: Dashboard
